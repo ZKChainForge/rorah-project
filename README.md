@@ -53,7 +53,7 @@ Unlike traditional proof aggregation (which requires converting all proofs to th
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [Architecture](#-architecture)
