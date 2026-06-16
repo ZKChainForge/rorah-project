@@ -1,0 +1,27 @@
+[package]
+name = "rorah-circuits"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rorah-core = { path = "../rorah-core" }
+rorah-utils = { path = "../rorah-utils" }
+
+ark-ec = { version = "0.4", features = ["parallel"] }
+ark-ff = { version = "0.4", features = ["parallel", "std"] }
+ark-bn254 = "0.4"
+ark-serialize = { version = "0.4", features = ["derive"] }
+ark-std = "0.4"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+thiserror = "1.0"
+sha2 = "0.10"
+sha3 = "0.10"
+anyhow = "1.0"
+tracing = "0.1"
+lazy_static = "1.4"
+
+[dev-dependencies]
+proptest = "1.0"
