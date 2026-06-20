@@ -2,7 +2,9 @@
 members = [
     "crates/rorah-core",
     "crates/rorah-utils",
+    "crates/rorah-circuits",
     "cli",
+    
 ]
 resolver = "2"
 
