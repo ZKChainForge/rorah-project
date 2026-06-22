@@ -1,7 +1,6 @@
 use ark_bn254::{Bn254, Fq, G1Affine, G2Affine};
 use ark_ec::{AffineRepr, pairing::Pairing};
 use ark_ff::{PrimeField, Zero};
-use ark_serialize::CanonicalSerialize;
 
 pub struct PairingCheck;
 
@@ -18,7 +17,7 @@ impl PairingCheck {
     ) -> anyhow::Result<bool> {
         let p_a = bytes_to_g1(a1_x, a1_y)?;
         let p_b = bytes_to_g1(b1_x, b1_y)?;
-        let p_c = bytes_to_g1(a2_x, a2_y)?;
+        let _p_c = bytes_to_g1(a2_x, a2_y)?;
         let _p_d = bytes_to_g1(b2_x, b2_y)?;
 
         let g2_gen = G2Affine::generator();

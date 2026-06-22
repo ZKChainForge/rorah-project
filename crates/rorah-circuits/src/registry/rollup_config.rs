@@ -1,4 +1,3 @@
-use crate::registry::rollup_ids::RollupId;
 use crate::traits::ProofSystem;
 use serde::{Deserialize, Serialize};
 

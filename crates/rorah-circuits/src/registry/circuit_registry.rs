@@ -7,7 +7,6 @@ use crate::groth16::{Groth16Verifier, Groth16VK};
 use crate::cairo::{CairoVerifier, CairoVK};
 use std::collections::HashMap;
 use std::sync::Arc;
-use rorah_core::field::traits::FieldElement as FieldElementTrait;
 
 pub struct CircuitRegistry {
     configs: HashMap<String, RollupConfig>,
