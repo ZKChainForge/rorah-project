@@ -1,5 +1,5 @@
 use ark_bn254::Fr;
-use ark_ff::{Field, One};
+use ark_ff::One;
 
 pub struct LookupVerifier;
 
@@ -54,7 +54,7 @@ impl LookupVerifier {
         let mut product = Fr::one();
 
         for val in input {
-            product *= (*val + beta * gamma);
+            product *= *val + beta * gamma ;
         }
 
         product

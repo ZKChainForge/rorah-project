@@ -1,5 +1,5 @@
 use ark_bn254::Fr;
-use ark_ff::{Field, One};
+use ark_ff::One;
 
 pub struct Halo2PermutationChecker;
 

@@ -1,4 +1,3 @@
-use crate::common::ipa::InnerProductProof;
 use crate::halo2::types::Halo2ProofData;
 
 pub struct Halo2IPAVerifier;
@@ -20,7 +19,7 @@ impl Halo2IPAVerifier {
 
     pub fn verify_commitment(
         commitment: &[u8],
-        ipa_proof: &[u8],
+        _ipa_proof: &[u8],
         evaluation: &[u8],
     ) -> anyhow::Result<bool> {
         if commitment.len() != 32 {

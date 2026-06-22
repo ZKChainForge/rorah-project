@@ -1,5 +1,4 @@
 use crate::cairo::types::CairoProofData;
-use ark_bn254::Fr;
 use ark_ff::Field;
 
 pub struct CairoAIRChecker;
