@@ -1,4 +1,3 @@
-use crate::common::merkle::MerkleProof;
 use crate::boojum::types::FRILayerData;
 
 pub struct FRILayerVerifier;

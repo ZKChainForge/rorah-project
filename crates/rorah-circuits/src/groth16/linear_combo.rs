@@ -1,6 +1,4 @@
 use crate::common::elliptic_curve::{ECPoint, G1Operations};
-use ark_bn254::Fr;
-use ark_ff::Field;
 
 pub struct LinearComboComputer;
 

@@ -1,4 +1,3 @@
-use crate::common::fri::FRIVerifier;
 use crate::plonky2::types::Plonky2ProofData;
 
 pub struct Plonky2FRIVerifier;
@@ -30,7 +29,7 @@ impl Plonky2FRIVerifier {
     pub fn verify_opening(
         opening_proof: &[u8],
         commitment: &[u8],
-        evaluation_point: &[u8],
+        _evaluation_point: &[u8],
     ) -> anyhow::Result<bool> {
         if opening_proof.is_empty() {
             anyhow::bail!("opening_proof cannot be empty");

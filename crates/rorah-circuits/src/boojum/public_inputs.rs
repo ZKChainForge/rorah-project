@@ -1,5 +1,4 @@
 use crate::boojum::types::BoojumPublicInputs;
-use crate::common::hash::sha256;
 
 pub struct PublicInputValidator;
 

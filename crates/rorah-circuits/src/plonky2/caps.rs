@@ -1,4 +1,4 @@
-use crate::common::merkle::{MerkleProof, hash_pair};
+use crate::common::merkle::hash_pair;
 use crate::plonky2::types::Plonky2ProofData;
 
 pub struct CapVerifier;

@@ -1,4 +1,4 @@
-use ark_ff::{Field, Zero};
+use ark_ff::Zero;
 use ark_bn254::Fr;
 
 pub struct GateChecker;
